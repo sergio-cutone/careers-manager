@@ -1,0 +1,172 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .wprem-careers-admin,
+ .wprem-careers-admin p{
+  font-family: 'YP Local', Arial, sans-serif;
+  font-size: 16px !important;
+ }
+
+ .wprem-careers-admin strong{
+  /*font-weight: 500;*/
+ }
+
+ .wprem-careers-admin h1{
+  font-family: 'YP Local', Arial, sans-serif;
+  font-weight: 400;
+ }
+
+ .wprem-careers-admin h1 span{
+  font-family: 'YP Hand', Arial, sans-serif;
+ }
+
+ .wprem-careers-admin fieldset{
+  margin-bottom: 22px;
+  padding: 0 10px;
+ }
+
+ .wprem-careers-admin fieldset.labels-right label{
+  float: right;
+ }
+
+ .wprem-careers-admin h2{
+  font-family: 'YP Hand', Arial, sans-serif;
+  background-color: #333;
+  color: #ffcd00;
+  padding: 10px;
+  margin-left: -10px;
+  /*margin-right: -10px;*/
+ }
+
+ .wprem-careers-admin.doc-layout p{
+  /*padding: 0 10px;*/
+ }
+
+ .wprem-careers-layout{
+  text-align: center;
+ }
+
+ .wprem-careers-layout label{
+  display: inline-block;
+ }
+
+ .wprem-careers-layout label > input{
+   visibility: hidden;
+   position: absolute;
+ }
+
+ .wprem-careers-layout label > input + div{
+   cursor: pointer;
+   border: 2px solid transparent;
+   display: inline-block;
+ }
+
+ .wprem-careers-layout label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+   border:2px solid #f00;
+ }
+
+ .wprem-careers-layout .layout-option{
+  width: 198px;
+  height: 198px;
+  background-image: url(../img/wprem-careers-layout.jpg);
+  background-size: cover;
+  margin: 0 10px;
+  box-shadow: 0px 6px 5px -2px #333;
+  transition: all .4s ease-in-out;
+  position: relative;
+  display: inline-flex;
+ }
+
+ .wprem-careers-layout input[type=radio]:checked + .layout-option:before{
+  content: '\f147';
+  position: absolute;
+  font-size: 32px;
+  border: 2px solid #333;
+  padding: 14px 6px 11px;
+  transform: translate(80px,80px);
+  font-family: dashicons;
+  border-radius: 40px;
+  background-color: #ffcd00;
+ }
+
+ .wprem-careers-layout .layout-option:hover{
+   transform: translate(0,-8px);
+   box-shadow: 0px 12px 14px 1px #929292;
+ }
+
+ .wprem-careers-layout .layout-option.lLeft{
+  background-position: -198px;
+ }
+
+ .wprem-careers-layout .layout-option.lCentre{
+  background-position: -396px;
+ }
+
+ .wprem-careers-admin .option-disabled{
+  display: none;
+ }
+
+ .wp-picker-holder{
+  position: absolute;
+ }
+
+/*.empty-message input{
+  padding: 10px;
+  border-radius: 5px;
+}*/
+
+
+.wpremC-enable-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+.wpremC-enable-switch input {
+ display:none;
+}
+
+.wpremC-enable-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wpremC-enable-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #333;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .wpremC-enable-slider {
+  background-color: #ffcd00;
+}
+
+input:checked + .wpremC-enable-slider:before {
+  background-color: #000;
+}
+
+input:focus + .wpremC-enable-slider {
+  box-shadow: 0 0 1px #ffcd00;
+}
+
+input:checked + .wpremC-enable-slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}

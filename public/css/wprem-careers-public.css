@@ -1,0 +1,47 @@
+.single-wprem_careers .wprem-jobcomp, .single-wprem_careers .wprem-jobexpiry, .single-wprem_careers .wprem-jobtype, .wprem-career .wprem-jobcomp, .wprem-career .wprem-jobtype {
+	display: block
+}
+
+.single-wprem_careers .wprem-jobtype, .wprem-career .wprem-jobtype {
+	font-weight: 700
+}
+
+.single-wprem_careers h3, .wprem-career h3 {
+	font-family: "YP Hand", Verdana, Arial, sans-serif;
+	font-size: 20px
+}
+
+.wprem-career .wprem-jobexcerpt {
+	margin: 15px 0 20px
+}
+
+.single-wprem_careers .wprem-jobcomp {
+	margin-bottom: 15px
+}
+
+.wprem-careers-listing {
+	margin-bottom: 1em;
+}
+
+.wprem-careers-listing .title {
+	font-size: 16px;
+}
+
+.wprem-career-inner {
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+.wprem-career-opp-title,
+.wprem-career-apply-title {
+    display: block;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wprem-label {
+    font-weight: 600;
+}
